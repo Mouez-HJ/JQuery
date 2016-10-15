@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="M-Style.css"/>
+        <script>
+          
+        </script>
+         <!-- MODE LOCAL -->
+        
+    
+      <!--  <script>    
+           $           
+            (
+                 function (){
+                     $('button').css('background-color','blue');
+                     $('button').mouseenter(function(){
+                         $(this).css('background-color','yellow');
+                     });
+                     $("button").mouseleave(function(){
+                         $(this).css('background-color','blue');
+                     });
+                    
+                    
+                 }
+                    
+            ); 
+   
+        </script> -->
+     
+          
+    </head>
+    <body>
+        <script type="text/javascript" src="../JQUERY/jquery-3.1.1.js"></script>
+        <!-- jQuery est inclus ! -->
+   <script>
+      $(function(){
+           
+           $('input:checkbox').click(testeChekbox);
+           
+       });
+       function testeChekbox(){
+          
+          
+           if($('#checkbox1').is(':checked')){
+           $(".depart1").css('color','yellow');
+            }
+            if($('#checkbox2').is(':checked')){
+           $(".depart2").css('color','yellow');
+            }
+       }
+       
+   </script>    
+   
+   
+        <button>Exercice 1</button>    
+        <button>Exercice 2</button>    
+      
+    
+       <form>
+       <div class="depart1"> 
+            <p> <input type="checkbox" name="soleil" id="checkbox1" value="jQuery"> </p>
+            <label for="checkbox1">Soleil</label> 
+        </div>
+        <div class="depart2"> 
+            <p><input type="checkbox" name="Océan" id="checkbox2" value="jQuery"> </p>
+            <label for="checkbox2">Océan</label> 
+        </div>
+        </form>     
+         
+        <div></div>
+ 
+     
+
+        
+    </body>
+</html>

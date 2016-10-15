@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="M-Style.css"/>
+       <script type="text/javascript" src="../JQUERY/jquery-3.1.1.js"></script>
+       <script>
+           $(function Selection_text(){
+               $('#select_joueurs').click(function(){
+                var num =$('#select_joueurs option:selected').text();   
+                  $('#id_text1').val(num);    
+                
+                  $('#id_button_inverser').click(function(){
+                       var numzero =""; 
+                       $('#id_text1').val(numzero);
+                       $('#id_text2').val(num);
+                   });        
+               });             
+           });
+       </script>
+    </head>    
+    <body>   
+           <div>TODO write content</div>
+           <p><input class="input1" type="text" value="" id="id_text1"></p>
+           <p><button id="id_button_inverser">Inverser</button></p>
+           <p><input type="text" id="id_text2"></p>
+          
+           <select name="select_joueurs" id="select_joueurs">
+               <option>---</option>
+               <option value="1">Mamadou Sakho</option>
+               <option value="2">Karim Benzema</option>
+               <option value="3">Mathieu Valbuena</option>
+               <option value="4">Lucas Digne</option>
+           </select>
+           
+    </body>
+</html>
